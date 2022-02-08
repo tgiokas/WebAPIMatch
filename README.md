@@ -1,8 +1,10 @@
 # WebAPIMatch
-Demo WebAPI with .NET Core 3.1 for Match management.
+Demo Web API Service with .NET Core 3.1 for Match management.
 
-Web API .NET Core 3.1 (CRUD Operations)
+- Web API .NET Core 3.1 (CRUD Operations)
 
-Entity Framework Migration
+- MS SQL Server
 
-Swagger Documentation
+- Entity Framework Migration
+
+- Swagger Documentation
