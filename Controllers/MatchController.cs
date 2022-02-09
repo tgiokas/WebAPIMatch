@@ -87,7 +87,7 @@ namespace WebAPICore.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [SwaggerRequestExample(typeof(SwaggerRequestMatchOdd), typeof(SwaggerExampleMatchOdd))]
+        [SwaggerRequestExample(typeof(SwaggerRequestMatch), typeof(SwaggerExampleMatch))]
 
         public IActionResult Edit(int id, DTOMatch matchDTO)
         {

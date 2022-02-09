@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebAPIMatch.Models
 {
     public class DTOMatch
-    { 
+    {       
         public int Id { get; set; }
 
         public string Description { get; set; }

@@ -12,7 +12,6 @@ using Swashbuckle.AspNetCore.Filters;
 using WebAPIMatch.Models;
 using WebAPIMatch.Service;
 using WebAPIMatch.Helpers.Swagger;
-using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace WebAPIMatch
 {
@@ -63,8 +62,7 @@ namespace WebAPIMatch
                     Example = new OpenApiString("00.00"),                    
                 });
 
-            });            
-            
+            });
             services.AddSwaggerExamplesFromAssemblyOf<SwaggerExampleMatch>();           
 
             services.AddDbContext<DBEntities>(o =>o.UseSqlServer(Configuration.GetConnectionString("WebAPIDB")));

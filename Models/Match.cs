@@ -11,8 +11,7 @@ namespace WebAPIMatch.Models
     public partial class Match
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [JsonIgnore]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]   
         public int Id { get; set; }
 
         [StringLength(20)]
@@ -29,8 +28,7 @@ namespace WebAPIMatch.Models
         public string TeamB { get; set; }
 
         public int Sport { get; set; }
-
-        [JsonIgnore]
+        
         [InverseProperty("Match")]
         public ICollection<MatchOdd> MatchOdds { get; set; }
 

@@ -1,7 +1,9 @@
-﻿namespace WebAPIMatch.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebAPIMatch.Models
 {
     public partial class DTOMatchOdd
-    {       
+    {           
         public int Id { get; set; }
 
         public string Specifier { get; set; }

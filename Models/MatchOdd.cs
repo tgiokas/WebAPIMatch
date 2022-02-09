@@ -7,11 +7,9 @@ namespace WebAPIMatch.Models
     public partial class MatchOdd
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        //[JsonIgnore]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]       
         public int Id { get; set; }
-
-        [JsonIgnore]
+       
         [ForeignKey(nameof(MatchId))]
         public int MatchId { get; set; }
 
